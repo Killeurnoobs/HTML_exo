@@ -16,6 +16,14 @@
   <label for="email">text:</label><br>
   <input type="text" id="message" name="message" ><br><br>
   
+  <label for="type">Type:</label>
+
+	<select name="type" id="type">
+		<option value="Thecnique">Thecnique</option>
+		<option value="administratif">administratif</option>
+		<option value="materiels">materiels</option>
+	</select>
+  
   <button type="button" onclick="submitForm()">Envoyer</button>
   
 </form>
@@ -25,7 +33,7 @@ function submitForm() {
   var form = document.getElementById("myForm");
   var formData = new FormData(form);
 
-  fetch('https://hook.eu2.make.com/kby49tmjdwv4d3i43m8hscfydlndgjc4', {
+  fetch('https://hook.eu2.make.com/47nuyreg1wdddhtfh3uf2b1xvg1aht33', {
     method: 'POST',
     body: formData
   })
